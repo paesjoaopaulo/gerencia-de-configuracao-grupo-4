@@ -8,9 +8,11 @@
     <h:body>
         Produto
         <h:form>
-            <h:inputText value="#{jsfCidade.codigo}"/>
-            <h:inputText value="#{jsfCidade.nome}" />
-            <h:commandButton action="#{jsfCidade.persist()}" />
+            <h:outputLabel for="codigo" value="Código"/>
+            <h:inputText id="codigo" value="#{jsfCidade.codigo}"/>
+            <h:outputLabel for="nome" value="Nome"/>
+            <h:inputText id="nome" value="#{jsfCidade.nome}" />
+            <h:commandButton value="Salvar" action="#{jsfCidade.persist()}" />
         </h:form>
         
         <h:form>
